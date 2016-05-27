@@ -19,10 +19,8 @@ cR <- rCopula(10000, clayCop)
 gR <- rCopula(10000, gumCop)
 
 # Plotting
-pdf(file = "C:/Users/Jan/Dropbox/2. University/MA - Semester 2/2016 - Dreamteam/Time Series Analysis/Project Copulas/ProjectPaper/Graphics/archimed.pdf")
 par(mfrow = c(2, 2))
 plot(nR[, 1], nR[, 2], pch='.', col='dodgerblue4', xlab = "", ylab = "", main = "Gaussian Copula")
 plot(tR[, 1], tR[, 2], pch='.', col='dodgerblue4', xlab = "", ylab = "", main = "t-Copula")
 plot(cR[, 1], cR[, 2], pch='.', col='dodgerblue4', xlab = "", ylab = "", main = "Clayton Copula")
 plot(gR[, 1], gR[, 2], pch='.', col='dodgerblue4', xlab = "", ylab = "", main = "Gumbel Copula")
-dev.off()
