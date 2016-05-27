@@ -7,8 +7,6 @@ df <- read.csv("Scopus.csv", header=TRUE, sep = ",", quote = "\"")  # account fo
 colnames(df) <- c("Year", "Amount")                                 # rename cols
 
 # Plotting
-tikz(file = "/Users/Ben/Dropbox/Dreamteam FS16/Time Series Analysis/Project Copulas/ProjectPaper/Graphics/adventCopula.tex",
-     width = 5.6, height = 4.1, standAlone = TRUE)
 plot(df$Amount ~ df$Year, 
      type = "l",
      xlab = "Year",
@@ -22,4 +20,3 @@ points(df$Amount ~ df$Year,
        col = "dodgerblue4",
        pch = 16,
        cex = 1)
-dev.off()
